@@ -11,3 +11,17 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+  test:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: test
+          command: echo test..
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
