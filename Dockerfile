@@ -1,3 +1,3 @@
 FROM alpine
 
-ENTRYPOINT ["sleep", "600"]
+CMD ["echo", "test."]
