@@ -41,7 +41,8 @@ make_task_def(){
 				{
 					"containerPort": 8080
 				}
-			]
+			],
+                        "command": ["echo", "test."]
 		}
 	]'
 	
